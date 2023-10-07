@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: rgb(33, 127, 137);
+    z-index: 10000;
+}
+.nav h2{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+#item li a:hover, #item .icon i:hover{
+    color: yellow;
+    cursor: pointer;
+}
+#item .icon i{
+    color: white;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+.back{
+    background-image: url(bgimg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+.back .overlay{
+    background: rgb(79, 72, 72);
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.mid{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.mid p{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+.mid h2{
+    color: white;
+    font-size: 3rem;
+}
+.mid .btn{
+    margin-top: 2rem;
+}
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.mid .btn a.simple{
+    color: white;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+}
+.mid .btn a.simple:hover{
+    color: yellow;
+}
+.mid .btn a.border{
+    color: rgb(22, 200, 220);
+    border: 1px solid rgb(8, 180, 199);
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border-radius: 3px;
+}
+.mid .btn a.border:hover{
+    background: white;
+    border: 1px solid white;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #bae5f1;
+}
+.details h3,h6,h5{
+    color: white;
+}
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+.details .one a{
+    color: white;
+    background: #f13a11;
+    border: 2px solid rgb(146, 145, 145);
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.details .one a:hover{
+    background-color: white;
+    color: black;
+}
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+.details .two h3{
+    font-size: 2.5rem;
+}
+.details .two h5{
+    font-size: 1.1rem;
+}
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+}
+.trainer{
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .about{
+    width: 39%;
+}
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+.trainer .people{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: white;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.023),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.038),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.044),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.051),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.trainer .people .team1 .name, .trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team1 .name{
+    padding: 5px 20px 0 20px;
+}
+.trainer .people .team1 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom:10px ;
+}
+.trainer .people .team1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+}
+.trainer .people .team1 .name i, .trainer .people .team1 .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.trainer .people .team1 .pro{
+    padding: 0 20px 5px 20px;
+}
+.trainer .people .team1 .pro p{
+    color: #212529;
+    
+}
+.class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+}
+.class .h2{
+    font-size: 2.2rem;
+    color: #222;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.class .classmenu .team1{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    background: white;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.023),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.038),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.044),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.051),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.class .classmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+.class .classmenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.class .classmenu .team1 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom:10px ;
+}
+.class .classmenu .team1 .teamdetails .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0 10px;
+}
+.class .classmenu .team1 .teamdetails .name .namedetails h4{
+    color: black;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.class .classmenu .team1 .teamdetails .name .namedetails p{
+    color: grey;
+    font-size: 1.1rem;
+}
+.class .classmenu .team1 .teamdetails .name .namedetails span{
+    font-weight: 700;
+    color: black;
+}
+.class .classmenu .team1 .teamdetails .name .num h5{
+    font-size: 1rem;
+    background: #f13a11;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+.class .classmenu .team1 .pro p{
+    font-size: 1.1rem;
+    color: #666262;
+
+}
+.class .classmenu .team1 .pro{
+    padding: 15px 10px 30px 10px;
+}
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact .form{
+    width: 45%;
+
+}
+.contact .form h2{
+    font-size: 2rem;
+    color: rgb(33, 127, 137);
+    padding-bottom: 10px;
+    width: 100%;
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #95a5a6;
+    outline: none;
+    margin: 10px 0;
+}
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 2px solid black;
+}
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+}
+.contact .map{
+    width: 45%;
+}
+.contact .map h2{
+    font-size: 2rem;
+    color: rgb(33, 127, 137);
+    padding-bottom: 10px;
+    width: 100%;
+}
+.contact .map p{
+    font-size: 1.1rem;
+    color: black;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.contact .map p i{
+    color: red;
+    padding-right: 4px;
+}
+.contact .map iframe{
+    width: 100%;
+}
+.footer{
+    border-top: 1px solid black;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+.footer p i {
+    color: red;
+    padding-right: 5px;
+}
